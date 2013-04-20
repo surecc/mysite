@@ -23,4 +23,6 @@ urlpatterns = patterns('',
 	(r'^time/plus/(\d{1,2})/$', hours_ahead),
 	(r'^time/tpl/$', current_datetimeTpl),
         (r'^polls/', include('polls.urls')),
+        (r'^grabimg/', include('grabimg.urls')),
+        (r'^extractor/', include('extractor.urls')),
 )

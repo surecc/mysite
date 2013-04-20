@@ -1,0 +1,1 @@
+DIR_IMG = F:\MyProjects\GitHub\githubtest\django_surecc

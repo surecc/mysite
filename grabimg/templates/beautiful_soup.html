@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>用BeautifulSoup抓东东，好玩哦~</title>
+</head>
+<body>
+    <h1>给我你的链接吧，我来抓……</h1>
+
+    {% if form.errors %}
+        <p style="color: red;">
+            Please correct the error{{ form.errors|pluralize }} below.
+        </p>
+    {% endif %}
+
+    <form action="" method="post">
+        <table>
+            {{ form.as_table }}
+        </table>
+        <input type="submit" value="开抓啦">
+    </form>
+    <p>
+    <div>
+    	{{ ans }}
+    </div>
+</body>
+</html>

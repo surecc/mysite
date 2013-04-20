@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>grab image 抓图哦~</title>
+</head>
+<body>
+    <h1>给我你的链接吧，我来抓……</h1>
+
+    <form action="" method="post">
+        <table>
+		<tr>
+		<td>url</td><input name='url'></input>
+		</tr>
+		<tr>
+		<td>category</td>
+		<select>
+		{% for i in {{ cate2 }} %}
+			<option value = i.id > i.catename </option>
+		{% endfor %}
+		</select>
+		</tr>
+        </table>
+        <input type="submit" value="开抓啦">
+    </form>
+    <p>
+    <div>
+    	{{ ans }}
+    </div>
+</body>
+</html>
